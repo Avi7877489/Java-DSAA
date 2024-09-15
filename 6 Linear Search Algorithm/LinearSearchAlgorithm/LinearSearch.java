@@ -75,6 +75,12 @@ public class LinearSearch {
                 return true;
             }
         }
+//        for (int i = 0; i < arr.length; i++) {
+//            int elemrnt = arr[i];
+//            if (elemrnt == target){
+//                return true;
+//            }
+//        }
         return false; //26:26
     }
 

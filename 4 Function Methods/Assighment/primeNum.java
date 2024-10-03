@@ -14,7 +14,7 @@ public class primeNum {
         }
     }
 
-    public static boolean isprime(int number) {
+    static boolean isprime(int number) {
         if (number <= 1) {
             return false;
 

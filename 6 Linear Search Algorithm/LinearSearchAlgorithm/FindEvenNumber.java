@@ -4,23 +4,27 @@ import com.sun.source.tree.BreakTree;
 
 public class FindEvenNumber {
     public static void main(String[] args) {
-        int[] nums = {12,345,2,6,7896};
+        int[] nums = {12, 345, 2, 6, 7896};
         System.out.println(findNumbers(nums));
 //        System.out.println(digits(-5552552));
 //        System.out.println(even(45965228));
 
+
     }
-    static  int findNumbers(int[] nums) {
+
+    static int findNumbers(int[] nums) {
         int count = 0;
-        for(int num : nums){
-            if (even(num) )
+        for (int numw : nums) {
+            if (even(numw))
                 count++;
         }
         return count;
 
+
     }
+
     // function to check whether a number contains even digits or not
-    static  boolean even(int num){
+    static boolean even(int num) {
         int numberofDigits = digits(num);
 //        if(numberofDigits %2 == 0){
 //            return true;
@@ -31,12 +35,12 @@ public class FindEvenNumber {
     }
 
 
-    static int digits(int num){
+    static int digits(int num) {
 
-        if (num < 0){
+        if (num < 0) {
             num = num * -1;
         }
-        if (num == 0){
+        if (num == 0) {
             return 1;
         }
 //
@@ -47,7 +51,8 @@ public class FindEvenNumber {
 //        }
 //        return count;
 
-        return (int)(Math.log10(num) +1);
+//        return (int)(Math.log10(num) +1);
+        return (int) (Math.log10(num) + 1);
     }
-
 }
+
